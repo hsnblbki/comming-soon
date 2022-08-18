@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+body{
+    font-family: ar-font;
+}
+header{
+    background-image:url(../images/header.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+header .brand{
+    margin:100px auto 60px;
+    display:inline-block;
+    padding-bottom:30px;
+    border-bottom:5px solid #474d55;
+}
+header .heading-page h1{
+    font-size:60px;
+    line-height:75px;
+    color:#fff;
+    font-weight:bold;
+}
+header .heading-page p{
+    font-size:18px;
+    line-height:25px;
+    color:#acacac;
+    width:40%;
+    margin:auto;
+}
+header .count-down{
+    margin:100px auto;
+}
+header .count-down .counter{
+    display:inline-block;
+    margin:0 30px 0 30px;
+}
+header .count-down .counter .count-amount{
+    display:block;
+    color:#ffce00;
+    font-size:60px;
+    font-weight:bold;
+}
+header .count-down .counter .count-period{
+    display:block;
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+header .send-notification form{
+    width:30%;
+    margin:auto;
+    transform:translateY(30%);
+}
+header .send-notification p{
+    color:#fff;
+    font-size:18px;
+}
+header .send-notification form button{
+    background-color:#ffce00;
+    padding:13px 30px;
+    border-radius:0;
+}
+header .send-notification form input{
+    border-radius:0;
+    border:2px solid #e6e6e6;
+    color:#e6e6e6;
+    font-size:18px;
+    text-align: right;
+}
+header .send-notification form .valid-feedback{
+    color:red;
+    margin-bottom:-30px;
+}
+section.features{
+    padding:100px 0;
+}
+section.features h2{
+    font-size:45px;
+    color:#555;
+    margin-bottom:50px;
+}
+section.features .row .d-flex{
+    border:4px solid #fafafa;
+    padding:40px 30px;
+    max-height: 190px;
+    margin-bottom:15px;
+}
+section.features .row .d-flex h4{
+    color:#555;
+    font-size:24px;
+}
+section.features .row .d-flex p{
+    color:#a1a1a1;
+    font-size:15px;
+    line-height:25px;
+}
+section.features .row .col-md-6:nth-child(even){
+    direction:ltr;
+}
+footer{
+    background-image:url(../images/footer-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+footer .footer-notification{
+    background-color:rgba(255,206,0,0.7);
+    padding:60px 0;
+}
+footer .footer-notification h3{
+    font-size:30px;
+    color:#555;
+    margin-bottom:30px;
+}
+footer .footer-notification form{
+    width:30%;
+    margin:auto;
+}
+footer .footer-notification form input{
+    border-radius:0;
+    border-color:#fff;
+    text-align:right;
+}
+footer .footer-notification form button{
+    border-radius:0;
+    background-color:#393939;
+    padding:13px 33px;
+}
+footer .social-media{
+    background-color:rgba(57,57,57,0.9);
+    padding:100px 0 30px;
+}
+footer .social-media h3{
+    color:#fff;
+    font-size:30px;
+    margin-bottom:30px;
+}
+footer .social-media ul li a{
+    width:70px;
+    height:70px;
+    color:#fff;
+    background-color: rgba(255,255,255,0.14);
+    font-size:24px;
+    display:block;
+    line-height:70px;
+    text-align:center;
+    transition: all .5s ease;
+}
+footer .social-media ul li a:hover{
+    background-color: #fad32f;
+    color:rgba(57,57,57,0.9);
+}
+footer .social-media hr{
+    width:40%;
+    margin:50px auto 30px;
+}
+footer .social-media a.email{
+    color:#b4b4b4;
+    font-size:18px;
+    text-decoration: none;
+}
+footer .social-media a.email i{
+    color:#ffce00;
+    margin-left:5px;
+}
+@media(max-width:1200px){
+    header .heading-page p{
+        width:60%;
+    }
+    form{
+        width:40% !important;
+    }
+}
+@media(max-width:991px){
+    section.features .row .d-flex h4{
+        font-size:17px;
+    }
+    section.features .row .d-flex p{
+        font-size:14px;
+    }
+    section.features .row .d-flex{
+        padding:15px 10px;
+    }
+    form{
+        width:50% !important;
+    }
+    header .heading-page p{
+        width:80%;
+    }
+}
+@media(max-width:678px){
+    form{
+        width:70% !important;
+    }
+}
+@media(max-width:602px){
+    header .heading-page h1{
+        font-size:40px;
+    } 
+    header .heading-page p{
+        width:100%;
+    }
+}
